@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="/css/HeaderStyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/TopNavBarStyleSheet.css">
+    <link rel="stylesheet" href="/css/FooterStyleSheet.css">
+    <link rel="stylesheet" href="/css/IndexStyleSheet.css">
+</head>
+<body>
+    <header>
+        <a href="/Index.html">
+            <h1 style="font-family: Sofia, sans-serif; color: #0f4330; font-size: 30px; font-weight: 100;"><img src="/images/logo.png" alt="cow face" style="height: 75px;">Kathy's Homestead</h1>
+        </a>
+    </header>
+    <main>
+        <!--Top Nav Bar-->
+        <div class="topnav" id="myTopnav">
+            <a href="/Index.html">Home</a>
+            <a href="/html/Recipes/Recipes.html">Recipes</a>
+            <a href="/html/Crafts/Crafts.html">Crafts</a>
+            <a href="/html/Cleaning/Cleaning.html">Cleaning</a>
+            <a href="/html/Backyard/Backyard.html">Backyard</a>
+            <a href="/html/About.html">About</a>
+            <a href="/html/Contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <!--Main Content Division-->
+        <div class="grid-container">
+            <!--Links to categories-->
+            <div class="item1">
+                <div class="responsive">
+                    <div class="gallery">
+                        <a href="/html/Recipes/Recipes.html">
+                            <img src="/images/Index Images/Recipes.jpeg" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <a href="/html/Recipes/Recipes.html">Recipes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a href="/html/Crafts/Crafts.html">
+                            <img src="/images/Index Images/Crafts.jpeg" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <a href="/html/Crafts/Crafts.html">Crafts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a href="/html/Cleaning/Cleaning.html">
+                            <img src="/images/Index Images/Cleaning.jpeg" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <a href="/html/Cleaning/Cleaning.html">Cleaning</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a href="/html/Backyard/Backyard.html">
+                            <img src="/images/Index Images/Backyard.jpeg" width="600" height="400">
+                        </a>
+                        <div class="desc">
+                            <a href="/html/Backyard/Backyard.html">Backyard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Recent Posts-->
+            <div class="item2">
+                <h2 style="font-size: 20px; text-decoration: underline;">Recent Posts</h2>
+                <div class="posts">
+                    <!--Soap Methods Post-->
+                    <h2 style="font-size: 30px;">Soap Methods</h2>
+                    <img src="/images/Crafts/Soaps/Soap Methods Post/Soap1.jpeg" alt="soap" style="border-radius: 8px; width: 100%; object-fit: contain; padding-bottom: 20px;">
+                    <p style="text-align: justify; font-size: 20px;">Have you ever wanted to make your own soap? Making soap is not as hard as you think.  We will go over the pros and cons of the different ways to make soap, so you can see which way works best for you.
+                        <a href="/html/Crafts/Soaps/SoapMethodsPost.html" style="text-decoration: underline;">Click here to find out how.</a>
+                    </p>
+                </div> 
+            </div>
+            <!--About Section & Ad Section-->
+            <div class="item3">
+                <img src="/images/ComingSoon.jpeg" alt="About" style="width: 100%; padding: 10%;">
+                <br>
+                <p style="font-size: 20px;">More info will be coming soon for about the website.</p>
+                <hr>
+                Ads will go here
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <a href="/Index.html">
+                    <h1 style="font-family: Sofia, sans-serif; color: #0f4330; font-size: 15px; font-weight: 100;"><img src="/images/logo.png" alt="cow face" style="height: 50px;">Kathy's Homestead</h1>
+                </a>
+            </div>
+            <div class="column">
+                <a href="/Index.html">Home</a>
+                <br>
+                <a href="/html/About.html">About</a>
+                <br>
+                <a href="/html/Contact.html">Contact</a>
+            </div>
+            <div class="column">
+                <a href="/html/Recipes/Recipes.html">Recipes</a>
+                <br>
+                <a href="/html/Crafts/Crafts.html">Crafts</a>
+                <br>
+                <a href="/html/Cleaning/Cleaning.html">Cleaning</a>
+                <br>
+                <a href="/html/Backyard/Backyard.html">Backyard</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
